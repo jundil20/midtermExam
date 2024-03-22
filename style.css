@@ -30,6 +30,7 @@ body {
     background-image: url(pictures/i_love_puerto_princesa-transformed.png);
     width: 100%;
     background-size:cover;
+    background-repeat: no-repeat;
     height: 568px;
     margin-bottom: 20px;
     color: gold;
