@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Mundo Sans Light';
+    src: url('path/to/mundo-sans-light.woff2') format('woff2'), /* Modern Browsers */
+         url('path/to/mundo-sans-light.woff') format('woff');   /* Older Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainLayout{
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+body {
+    background-color: #F2F3F4;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.transparentNav {
+    background-image: url(pictures/i_love_puerto_princesa-transformed.png);
+    width: 100%;
+    background-size:cover;
+    height: 568px;
+    margin-bottom: 20px;
+    color: gold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.transparentNav h1{
+    margin-top: -12rem !important;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.generalNav {
+    position: fixed;
+    width: 100%;
+}
+
+#navbarScroll > ul > li > a {
+    color: white; 
+    font-size: 1.1em;
+    transition: 0.6s;
+}
+
+#navbarScroll > ul > li > a.activez{
+    color: gold;
+}
+
+#logoPP{
+    color: gold;
+    transition: 0.6s;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+#navID{
+    height: 100px;
+    background: transparent;
+    transition: 0.6s;
+}
+
+header.stickyScroll #navID{
+    height: auto;
+    background-color: #7FD1AE; 
+}
+
+header.stickyScroll > nav > #navbarScroll > ul > li > a.inactivez, header.stickyScroll #logoPP{
+    transition: 1s;
+    color: #ffffff; 
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    color: white;
+    background-color: #598FC7; 
+    font-size: 1.5em;
+    text-align: center;
+    padding: 1.2rem;
+}
+
+/* Home page */
+.introStatement{
+    margin: auto;
+    width: 82%;
+    color: black;
+}
+
+.introStatement > h3{
+    padding: 50px;
+    color: #7FD1AE;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.introStatement > p{
+    text-align: justify;
+    font-family: 'Mundo Sans Light', sans-serif;
+    margin-top: -1.2em;
+    padding: 10px 10px 10px 10px;
+    line-height: 2em;
+    opacity: 0.8;
+}
+
+.puertoPrincesaPreviewPics img{
+    width: 420px;
+    height: 310px;
+}
+
+iframe{
+    width: 450px;
+    height: 330px;
+}
+
+@media screen and (max-width: 500px) {
+
+    .mapContainer iframe{
+        border: none;
+        width: 300px;
+        height: 225px;
+        max-width: 100vh;
+        max-width: 100dvh;
+    }
+
+    .mapContainer{
+        max-width: 100vw;
+        max-width: 100vw;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .container img{
+        width: 230px;
+        height: 170x;
+    }
+
+    .mapContainer iframe{
+        border: none;
+        width: 300px;
+        height: 225px;
+        max-width: 100vh;
+        max-width: 100dvh;
+    }
+
+    .mapContainer{
+        max-width: 100vw;
+        max-width: 100vw;
+    }
+
+}
+
+.puertoPrincesaPreviewPics{
+    width: 85%;
+    height: auto;
+    overflow: hidden;
+    background-color: #499A7A;
+    margin-top: 5em;
+    border-radius: 10px;
+}
+
+.puertoPrincesaPreviewPics img{
+    padding-bottom: 30px;
+}
+
+.puertoPrincesaPreviewPics > .row > div{
+    margin: auto;
+}
+
+.puertoPrincesaPreviewPics > .row > div > p{
+    text-align: justify;
+    font-family: 'Mundo Sans Light', sans-serif;
+    line-height: 2em;
+    color: #ffffff;
+}
+
+.puertoPrincesaPreviewPics > h3{
+    padding: 50px;
+    color: #ffffff;
+    font-weight: bolder;
+    text-align: center;
+}
+hr{
+    background-color: gold;
+}
+
+span.experience{
+    color: gold;
+    font-weight: bold;
+}
+.h3Margin{
+    margin-bottom: 1.5em;
+}
+.mapContainer{
+    width: 80%;
+    margin: 3em auto 2em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 95vw;
+    max-width: 95dvw;
+}
+
+/* Calendar of events */
+.card{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card-header{
+    background-color: #499A7A;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.calendarofEvents{
+    text-align: center;
+}
+
+/* History */
+
+.historyContainer{
+    background-color:#499A7A;
+    color: #ffffff;
+    text-align: justify;
+    border-radius: 10px;
+    line-height: 2rem;
+}
+
+.historyContainer h3{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.historyContainer img{
+    margin-bottom: 2rem;
+}
+
+.historyContainer p{
+    text-align: justify;
+    padding-bottom: 1.5rem;
+}
+
+/* Contact Us */
+form{
+    padding: 2rem;
+}
+
+/* Explore */
+
+.containerExplore{
+    background-color: #499A7A;
+    margin-bottom: 2rem;
+}
+
+.containerExplore p{
+    text-align: justify;
+    font-family: 'Mundo Sans Light', sans-serif;
+    line-height: 2em;
+    color: #ffffff;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.containerExplore img{
+    text-align: justify;
+    font-family: 'Mundo Sans Light', sans-serif;
+    line-height: 2em;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.hExplore{
+    color: #ffffff;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 600px) and (min-width: 320px) {
+    .containerExplore p{
+        text-align: justify;
+        font-family: 'Mundo Sans Light', sans-serif;
+        line-height: 2em;
+        color: #ffffff;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
