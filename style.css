@@ -247,7 +247,8 @@ span.experience{
     text-align: center;
 }
 
-.historyContainer img{
+.historyContainer img
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
