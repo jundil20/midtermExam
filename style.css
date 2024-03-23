@@ -251,6 +251,10 @@ span.experience{
     margin-top: 1rem;
 }
 
+.historyContainer > img{
+    margin-bottom: 1rem;
+}
+
 .historyContainer p{
     text-align: justify;
     padding-bottom: 1.5rem;
