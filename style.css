@@ -236,9 +236,9 @@ span.experience{
 .historyContainer{
     background-color:#499A7A;
     color: #ffffff;
-    text-align: justify;
     border-radius: 10px;
     line-height: 2rem;
+    text-align: justify;
 }
 
 .historyContainer h3{
@@ -248,7 +248,7 @@ span.experience{
 }
 
 .historyContainer img
-    padding-top: 1rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
